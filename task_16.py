@@ -93,15 +93,16 @@ koef2 = create_mn(k2)
 write_file('file33_1.txt', create_str(koef1))
 write_file('file33_2.txt', create_str(koef2))
 
+
 # нахождение суммы многочленов
-with open('file33_1.txt', 'w') as date:
+with open('file33_1.txt', 'r') as date:
     st1 = date.readlines()
-with open('file33_2.txt' 'w') as date:
+with open('file33_2.txt' 'r') as date:
     st2 = date.readlines()
 print(f'Первый многочлен {st1}')
 print(f'Второй многочлен {st2}')
-lst1 = calc_mn(st1)
-lst2 = calc_mn(st2)
+lst1 = create_mn(st1)
+lst2 = create_mn(st2)
 ll = len(lst1)
 if len(lst1) > len(lst2):
     ll = len(lst2)
