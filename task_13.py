@@ -10,5 +10,4 @@ for i in my_lst:
     if  my_lst.count(i) == 1:
             new_lst.append(i)
             
-print(f'Исходный список: {my_lst}')
-print(f'Список неповторяющихся элементов {new_lst}')
+print(f'Исходный список: {my_lst} -> {new_lst}')
