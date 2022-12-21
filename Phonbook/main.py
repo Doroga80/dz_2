@@ -1,5 +1,13 @@
-from controller import *
+from os.path import exists
+from csv_creating import creating
+from file_writing import writing_scv
+from file_writing import writing_txt
 
-greeting()
 
-choice_todo() 
+path = 'Phonebook.csv'
+valid = exists(path)
+if not valid:
+    creating()
+
+writing_scv()
+writing_txt()
